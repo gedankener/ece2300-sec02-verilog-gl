@@ -13,15 +13,14 @@ module PairTripleDetectorGL
   output wire out
 );
 
-  //''' ACTIVITY '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-  
-  
-  assign out = or(and (in1, not(in0)), and(in1, in0));
+  wire w;
+  wire x;
+  wire y;
 
-  
-  Implement pair/triple detector using explicit gate-level modeling
-  //''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
+  or(w, in0, in1);
+  and(x, in0, in1);
+  and(y, w, in2);
+  or(out, y, x);
 endmodule
 
 `endif /* PAIR_TRIPLE_DETECTOR_GL_V */

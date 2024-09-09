@@ -1,6 +1,16 @@
+# Pair/Triple Detector Lab
 
-# ECE 2300 Section 2: Verilog Combinational Gate-Level Design
+This lab implements a pair/triple detector using gate-level Verilog.
 
-This repository contains source code for ECE 2300 Section 2. The discussion section handout can be found here:
+## Files
+- PairTripleDetectorGL.v: Main implementation of the pair/triple detector
+- PairTripleDetectorGL-test.v: Systematic test bench
+- PairTripleDetectorGL-adhoc.v: Ad-hoc test bench
+- ece2300-stdlib.v: Standard library for the course
+- PairTripleDetectorGL-test.sh: Shell script to automate testing
 
- - https://cornell-ece2300.github.io/ece2300-docs/ece2300-sec02-verilog-gl
+## Running Tests
+To run all tests and generate waveforms, execute:
+./PairTripleDetectorGL-test.sh
+Copy
+This will lint the design, compile the test bench, run all tests, and generate a VCD file for waveform viewing.
