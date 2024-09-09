@@ -1,11 +1,11 @@
 //========================================================================
-// PairTripleDetector_GL
+// PairTripleDetectorGL
 //========================================================================
 
 `ifndef PAIR_TRIPLE_DETECTOR_GL_V
 `define PAIR_TRIPLE_DETECTOR_GL_V
 
-module PairTripleDetector_GL
+module PairTripleDetectorGL
 (
   input  wire in0,
   input  wire in1,
@@ -14,7 +14,12 @@ module PairTripleDetector_GL
 );
 
   //''' ACTIVITY '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-  // Implement pair/triple detector using explicit gate-level modeling
+  
+  
+  assign out = or(and (in1, not(in0)), and(in1, in0));
+
+  
+  Implement pair/triple detector using explicit gate-level modeling
   //''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 endmodule

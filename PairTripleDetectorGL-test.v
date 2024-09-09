@@ -1,9 +1,9 @@
 //========================================================================
-// PairTripleDetector_GL-test
+// PairTripleDetectorGL-test
 //========================================================================
 
-`include "ece2300-test.v"
-`include "PairTripleDetector_GL.v"
+`include "ece2300-stdlib.v"
+`include "PairTripleDetectorGL.v"
 
 module Top();
 
@@ -27,7 +27,7 @@ module Top();
   logic dut_in2;
   logic dut_out;
 
-  PairTripleDetector_GL dut
+  PairTripleDetectorGL dut
   (
     .in0 (dut_in0),
     .in1 (dut_in1),

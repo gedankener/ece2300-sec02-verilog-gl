@@ -1,10 +1,10 @@
 //========================================================================
-// ece2300-test
+// ece2300-stdlib
 //========================================================================
 // Author : Christopher Batten (Cornell)
 // Date   : September 7, 2024
 //
-// ECE 2300 unit testing library for lab assignments.
+// ECE 2300 standard library for lab assignments.
 //
 
 `ifndef ECE2300_STDLIB_V
